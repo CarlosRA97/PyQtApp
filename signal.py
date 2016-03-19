@@ -3,12 +3,17 @@ from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 
 
-class MainWindow():
+class Form(QDialog):
+    def __init__(self, parent=None):
+        super(Form, self).__init__(parent)
+
+    pass
+
 
 
 def run():
     app = QApplication(sys.argv)
-    main = MainWindow()
+    main = Form()
     main.show()
     app.exec_()
 
